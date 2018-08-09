@@ -1,0 +1,18 @@
+
+img.emoji {
+    height: auto;
+    width: 5em;
+}
+
+.select-wrapper + label {
+    top: -120px;
+    margin: 20px;
+    padding: 20px;
+    position: absolute;
+}
+
+.bigE {
+    height: auto;
+    width: 5em;
+    font-size: 54px;
+}
