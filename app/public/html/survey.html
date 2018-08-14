@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Emoji Friend Matcher</title>
+    <title>Emoji Friend Matcher - Survey</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body>
+<body link="white">
     
   <nav>
         <div class="nav-wrapper">
@@ -20,24 +21,16 @@
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row nameField">
         <div class="input-field">
           <input id="name" type="text" class="validate">
           <label for="name">Name</label>
         </div>
-      </div>
+      </div> <br><br>
 
-      <div class="row">
-            <div class="input-field">
-              <input id="imgUrl" type="url" class="validate">
-              <label for="imgUrl">Paste an image url</label>
-            </div>
-          </div>
-          <br><br>
-        
-        <div class="row">
+        <div class="row rowPads">
             <div class="input-field card-panel hoverable col s12 m6">
-            <select>
+            <select id="select1" >
                 <option value="" disabled selected>How much do you like this emoji?</option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
@@ -48,47 +41,47 @@
             <label class="bigE">&#x1F479</label>
             </div>
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select2" >
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
                 <option value="4">&#x1F611</option>
                 <option value="5">&#x1F92E</option>
             </select>
-            <label class="bigE">&#x1F469&#x200D&#x1F4BB</label>
+            <label class="bigE">&#x1F5FF</label>
           </div>
         </div>
         <br><br>
-        <div class="row">
+        <div class="row rowPads">
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select3" >
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
                 <option value="4">&#x1F611</option>
                 <option value="5">&#x1F92E</option>
             </select>
-            <label class="bigE">&#x1F486</label>
+            <label class="bigE">&#x1F921</label>
         </div>
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select4" >
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
                 <option value="4">&#x1F611</option>
                 <option value="5">&#x1F92E</option>
             </select>
-            <label class="bigE">&#x1F6C0</label>
+            <label class="bigE">&#x1F387</label>
         </div>
         </div>
         <br><br>
-        <div class="row">
+        <div class="row rowPads">
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select5" >
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
@@ -98,8 +91,22 @@
             <label class="bigE">&#x1F574</label>
         </div>
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select6" >
+                <option value="" disabled selected></option>
+                <option value="1">&#x1F60D</option>
+                <option value="2">&#x1F642</option>
+                <option value="3">&#x1F610</option>
+                <option value="4">&#x1F611</option>
+                <option value="5">&#x1F92E</option>
+            </select>
+            <label class="bigE">&#x1F409</label>
+        </div>
+        </div>
+        <br><br>
+        <div class="row rowPads">
+        <div class="input-field card-panel hoverable col s12 m6">
+            <select id="select7" >
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
@@ -108,37 +115,23 @@
             </select>
             <label class="bigE">&#x1F46F&#x200D&#x2642&#xFE0F</label>
         </div>
-        </div>
-        <br><br>
-        <div class="row">
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select8" >
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
                 <option value="4">&#x1F611</option>
                 <option value="5">&#x1F92E</option>
             </select>
-            <label class="bigE">&#x1F5DC</label>
-        </div>
-        <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
-                <option value="1">&#x1F60D</option>
-                <option value="2">&#x1F642</option>
-                <option value="3">&#x1F610</option>
-                <option value="4">&#x1F611</option>
-                <option value="5">&#x1F92E</option>
-            </select>
-            <label class="bigE">&#x3299</label>
+            <label class="bigE">&#x1F32C</label>
         </div>
         </div>
         <br><br>     
-        <div class="row">
+        <div class="row rowPads">
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select9" >
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
@@ -148,8 +141,8 @@
             <label class="bigE">&#x1F438</label>
         </div>
         <div class="input-field card-panel hoverable col s12 m6">
-            <select>
-                <option value="" disabled selected>Select</option>
+            <select id="select0">
+                <option value="" disabled selected></option>
                 <option value="1">&#x1F60D</option>
                 <option value="2">&#x1F642</option>
                 <option value="3">&#x1F610</option>
@@ -160,11 +153,58 @@
         </div>
         </div>
     </div>
+    <div class="center-align buttonDiv">
+        <button class="btn waves-effect waves-light btn-large submit" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </div>
 
+    <footer class="page-footer">
+        <div class="container">
+          <p><a href="/api/friends">API Friends Link</a> | <a href="/api/clear"> Clear API List</a>  
+        </div>
+      </footer>
 </body>
 </html>
-<script>
+<script type="text/javascript">
     $(document).ready(function(){
         $('select').formSelect();
     });
+
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+      const arr = [Number($('#select1').val()), Number($('#select2').val()), Number( $('#select3').val()), Number($('#select4').val()), Number($('#select5').val()), Number($('#select6').val()), Number($('#select7').val()), Number($('#select8').val()), Number($('#select9').val()), Number($('#select0').val())];
+      const newUser = {
+        name: $("#name").val().trim(),
+        scores: arr
+      };
+      console.log(newUser);
+
+      $.post("/api/friends", newUser,
+        function(data) {
+          // Calculate a match and display name in modal
+          if (data) {
+            alert("Yay! You are officially booked!");
+          }
+
+          // else display default name in modal
+          else {
+            
+          }
+          // Clear the form when submitting
+          $("#name").val("");
+          $("#select1").val("");
+          $("#select2").val("");
+          $("#select3").val("");
+          $("#select4").val("");
+          $("#select5").val("");
+          $("#select6").val("");
+          $("#select7").val("");
+          $("#select8").val("");
+          $("#select9").val("");
+          $("#select0").val("");
+        });
+    });
+
+    
 </script>
